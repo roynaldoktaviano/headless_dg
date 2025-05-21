@@ -20,7 +20,7 @@ export default function BrandShowcaseSection({ brands }: BrandShowcaseSectionPro
 
     return (
         <section aria-labelledby="featured-brands-title" className="py-12 md:py-16 bg-white">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-20">
                 <h2 id="featured-brands-title" className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 md:mb-12">
                     Brand Terkemuka
                 </h2>

@@ -31,13 +31,13 @@ export default function ProductShowcaseSection({
 
   return (
     <section aria-labelledby={`product-showcase-${title.toLowerCase().replace(/\s+/g, '-')}`} className={`py-12 md:py-16 ${bgColor}`}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-20">
         <div className="flex justify-between items-center mb-8 md:mb-12">
           <h2 id={`product-showcase-${title.toLowerCase().replace(/\s+/g, '-')}`} className="text-2xl md:text-3xl font-bold text-gray-800">
             {title}
           </h2>
           {viewAllLink && (
-            <Link href={viewAllLink} className="text-blue-600 hover:text-blue-800 font-semibold transition-colors">
+            <Link href={viewAllLink} className="text-[#D61F31] hover:text-[#D61F31] font-semibold transition-colors">
               Lihat Semua &rarr;
             </Link>
           )}

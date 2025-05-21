@@ -23,8 +23,8 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section aria-labelledby="newsletter-title" className="py-12 md:py-16 bg-blue-600 text-white">
-      <div className="container mx-auto px-4 text-center">
+    <section aria-labelledby="newsletter-title" className="py-12 md:py-16 w-full bg-[#D61F31] text-white">
+      <div className="container w-full text-center">
         <h2 id="newsletter-title" className="text-2xl md:text-3xl font-bold mb-3">
           Jangan Lewatkan Info & Promo Terbaru!
         </h2>
