@@ -2,7 +2,7 @@
 'use client';
 
 import { useProducts } from '@/hooks/useProduct';
-import ProductList from '@/components/product/ProductList';
+import ProductList from '../(components)/product/ProductList';
 
 export default function Product() {
   const { products, isLoading } = useProducts();
