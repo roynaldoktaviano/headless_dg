@@ -1,4 +1,5 @@
 // app/page.tsx (atau app/(marketing)/page.tsx)
+
 import { Metadata } from 'next';
 
 // Data dummy untuk banner, produk, kategori (gantilah dengan data asli Anda)
@@ -14,15 +15,7 @@ const DUMMY_FEATURED_CATEGORIES = [
   { id: 4, name: 'Aksesoris Komputer', imageUrl: '/images/categories/computer-acc.png', link: '/products/aksesoris-komputer' },
 ];
 
-// Contoh produk (gunakan struktur ProductCard dari jawaban sebelumnya)
-const DUMMY_NEW_ARRIVALS = [
-  { id: 'p1', name: 'Smartphone Canggih X1', imageUrl: '/images/products/smartphone-x1.jpg', price: 7999000, originalPrice: 8500000, slug: 'smartphone-canggih-x1' },
-  { id: 'p2', name: 'Headphone Pro Sound', imageUrl: '/images/products/headphone-pro.jpg', price: 1250000, slug: 'headphone-pro-sound' },
-  { id: 'p3', name: 'Smartwatch Active Gen 5', imageUrl: '/images/products/smartwatch-g5.jpg', price: 2899000, slug: 'smartwatch-active-gen-5' },
-  { id: 'p4', name: 'Mechanical Keyboard RGB', imageUrl: '/images/products/keyboard-rgb.jpg', price: 950000, originalPrice: 1100000, slug: 'mechanical-keyboard-rgb' },
-];
 
-const DUMMY_BEST_SELLERS = [...DUMMY_NEW_ARRIVALS].reverse(); // Contoh saja
 
 const DUMMY_BRANDS = [
     { id: 1, name: 'Brand A', logoUrl: '/images/brands/brand-a.svg', link: '/brands/brand-a'},
@@ -81,19 +74,18 @@ import NewsletterSection from './(components)/pages/home/NewsletterSection';
 // import TestimonialsSection from './(components)/home/TestimonialsSection'; // Opsional
 // import BlogTeaserSection from './(components)/home/BlogTeaserSection'; // Opsional
 
-export default async function HomePage() {
-  // Di dunia nyata, Anda akan fetch data di sini:
-  // const banners = await fetchBanners();
-  // const featuredCategories = await fetchFeaturedCategories();
-  // const newArrivals = await fetchNewArrivals();
-  // const bestSellers = await fetchBestSellers();
+export default  function HomePage() {
+  
+
+
+ 
   // const brands = await fetchBrands();
 
   // Untuk sekarang, kita gunakan data dummy dari atas
   const banners = DUMMY_BANNERS;
   const featuredCategories = DUMMY_FEATURED_CATEGORIES;
-  const newArrivals = DUMMY_NEW_ARRIVALS;
-  const bestSellers = DUMMY_BEST_SELLERS;
+  // const newArrivals = DUMMY_NEW_ARRIVALS;
+  // const bestSellers = DUMMY_BEST_SELLERS;
   const brands = DUMMY_BRANDS;
 
   return (
@@ -109,13 +101,11 @@ export default async function HomePage() {
 
       <ProductShowcaseSection
         title="Produk Terbaru Untukmu"
-        products={newArrivals}
         viewAllLink="/products?sort=newest"
       />
 
       <ProductShowcaseSection
         title="Paling Laris Minggu Ini"
-        products={bestSellers}
         viewAllLink="/products?sort=bestsellers"
         bgColor="bg-slate-50" // Contoh variasi background
       />

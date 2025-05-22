@@ -1,6 +1,9 @@
 // app/(components)/home/ProductShowcaseSection.tsx
+"use client";
 import Link from 'next/link';
 import ProductCard from '../../product/ProductCard';
+import { Produk } from '@/types/product';
+import { useEffect, useState } from 'react';
 
 // Asumsikan Product interface sama dengan yang di ProductCard
 interface Product {
@@ -14,18 +17,32 @@ interface Product {
 
 interface ProductShowcaseSectionProps {
   title: string;
-  products: Product[];
   viewAllLink?: string;
   bgColor?: string; // Opsional untuk variasi background
 }
 
 export default function ProductShowcaseSection({
   title,
-  products,
   viewAllLink,
   bgColor = 'bg-white',
 }: ProductShowcaseSectionProps) {
-  if (!products || products.length === 0) {
+  const [produk, setProduk] = useState<Produk[]>([]);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+
+
+    useEffect(() => {
+      fetch('/api/produk-doran')
+        .then(res => {
+          if (!res.ok) throw new Error('Gagal fetch data');
+          return res.json();
+        })
+        .then(data => setProduk(data))
+        .catch(err => setError(err.message))
+        .finally(() => setLoading(false));
+    }, []);
+  
+  if (!produk || produk.length === 0) {
     return null;
   }
 
@@ -45,7 +62,7 @@ export default function ProductShowcaseSection({
         {/* Untuk UI/UX yang lebih baik, gunakan carousel di mobile dan grid di desktop */}
         {/* Contoh sederhana menggunakan grid: */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
-          {products.slice(0, 5).map((product) => (
+          {produk.slice(0, 5).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

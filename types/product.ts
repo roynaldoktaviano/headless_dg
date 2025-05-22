@@ -1,11 +1,15 @@
-export interface Product {
-  _embedded: any;
-  id: string;
-  image: string;
-  title :{
+export interface Produk { 
+  id: number;
+  title: {
     rendered: string;
-  }
-  harga: string;
+  };
   slug: string;
-  stok: string;
+  link: string;
+  stok?: string | number;
+  harga?: string;
+  _embedded : any;
+  harga_diskon: string;
+  description?: string;
+  short_description?: string;
 }
+
