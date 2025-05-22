@@ -13,7 +13,7 @@ export default function Topbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="block w-6 h-6 p-1 rounded-full flex items-center justify-center text-white transition-opacity hover:opacity-80"
+              className="w-6 h-6 p-1 rounded-full flex items-center justify-center text-white transition-opacity hover:opacity-80"
               style={{ backgroundColor: 'red' }} // Warna khas Instagram
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
@@ -29,7 +29,7 @@ export default function Topbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
-              className="block w-6 h-6 p-1 rounded-full flex items-center justify-center text-white transition-opacity hover:opacity-80"
+              className="w-6 h-6 p-1 rounded-full flex items-center justify-center text-white transition-opacity hover:opacity-80"
               style={{ backgroundColor: 'red' }} // Warna khas TikTok (hitam)
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
@@ -43,7 +43,7 @@ export default function Topbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="block w-6 h-6 p-1 rounded-full flex items-center justify-center text-white transition-opacity hover:opacity-80"
+              className="w-6 h-6 p-1 rounded-full flex items-center justify-center text-white transition-opacity hover:opacity-80"
               style={{ backgroundColor: 'red' }} // Warna khas YouTube
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
@@ -57,7 +57,7 @@ export default function Topbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="block w-6 h-6 p-1 rounded-full flex items-center justify-center text-white transition-opacity hover:opacity-80"
+              className="w-6 h-6 p-1 rounded-full flex items-center justify-center text-white transition-opacity hover:opacity-80"
               style={{ backgroundColor: 'red' }} // Warna khas Facebook
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
