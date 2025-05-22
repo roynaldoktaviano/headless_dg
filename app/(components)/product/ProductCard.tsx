@@ -32,18 +32,19 @@ export default function ProductCard({ product }: ProductCardProps) {
         />
       </div>
       <div className="p-4">
-        <h3 className="text-lg font-semibold text-gray-800 mb-1 truncate group-hover:text-[#D61F31] transition-colors">
+        <h3 className=" text-gray-800 mb-1  group-hover:text-[#D61F31] transition-colors">
           {product.name}
         </h3>
-        <div className="flex items-baseline mb-3">
-          <p className="text-xl font-bold text-[#D61F31]">
-            Rp{product.price.toLocaleString('id-ID')}
-          </p>
+        <div className="flex flex-col items-baseline mb-3 h-12">
           {hasDiscount && product.originalPrice && (
-            <p className="ml-2 text-sm text-gray-500 line-through">
+            <p className=" text-sm text-gray-500 line-through">
               Rp{product.originalPrice.toLocaleString('id-ID')}
             </p>
           )}
+          <p className="text-lg  mt-auto text-[#D61F31]">
+            Rp{product.price.toLocaleString('id-ID')}
+          </p>
+          
         </div>
         {/* Tambahkan info lain seperti rating, stok, dll jika perlu */}
         <button className="w-full bg-[#D61F31] text-white py-2 px-4 rounded-md hover:bg-[#D61F31] transition-colors text-sm font-medium">

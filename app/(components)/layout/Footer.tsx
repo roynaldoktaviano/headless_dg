@@ -4,7 +4,9 @@ import NewsletterSection from '../pages/home/NewsletterSection';
 
 export default function Footer() {
   return (
-    <><NewsletterSection /><footer className="bg-gray-800 text-gray-300 pt-10 pb-6">
+    <>
+    <NewsletterSection />
+    <footer className="bg-gray-800 text-gray-300 pt-10 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Kolom 1: Tentang Kami */}

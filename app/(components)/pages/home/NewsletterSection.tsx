@@ -28,7 +28,7 @@ export default function NewsletterSection() {
         <h2 id="newsletter-title" className="text-2xl md:text-3xl font-bold mb-3">
           Jangan Lewatkan Info & Promo Terbaru!
         </h2>
-        <p className="mb-8 max-w-xl mx-auto text-blue-100">
+        <p className="mb-8 max-w-xl mx-auto text-white">
           Daftar untuk mendapatkan update mingguan, penawaran eksklusif, dan berita gadget terkini langsung ke inbox Anda.
         </p>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto flex flex-col sm:flex-row gap-3">
@@ -41,11 +41,11 @@ export default function NewsletterSection() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Masukkan alamat email Anda"
             required
-            className="flex-grow px-4 py-3 rounded-md text-gray-800 focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+            className="flex-grow px-4 py-3 rounded-md bg-white text-red-600 focus:ring-2 focus:ring-red-400 focus:outline-none"
           />
           <button
             type="submit"
-            className="bg-yellow-400 hover:bg-yellow-500 text-blue-800 font-semibold px-6 py-3 rounded-md transition-colors"
+            className="bg-white hover:bg-yellow-500 text-red-600 font-semibold px-6 py-3 rounded-md transition-colors"
           >
             Berlangganan
           </button>

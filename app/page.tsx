@@ -127,7 +127,7 @@ export default async function HomePage() {
       {/* <TestimonialsSection /> */}
       {/* <BlogTeaserSection /> */}
 
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
     </main>
   );
 }
