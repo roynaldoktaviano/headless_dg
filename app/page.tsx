@@ -9,20 +9,21 @@ const DUMMY_BANNERS = [
 ];
 
 const DUMMY_FEATURED_CATEGORIES = [
-  { id: 1, name: 'Smartphone & Tablet', imageUrl: '/images/categories/smartphone.png', link: '/products/smartphone-tablet' },
-  { id: 2, name: 'Audio Device', imageUrl: '/images/categories/audio.png', link: '/products/audio-device' },
-  { id: 3, name: 'Wearables', imageUrl: '/images/categories/wearables.png', link: '/products/wearables' },
-  { id: 4, name: 'Aksesoris Komputer', imageUrl: '/images/categories/computer-acc.png', link: '/products/aksesoris-komputer' },
+  { id: 1, name: 'Smartphone & Tablet', imageUrl: '/images/handphone.png', link: '/products/smartphone-tablet' },
+  { id: 2, name: 'Audio Device', imageUrl: '/images/speaker.png', link: '/products/audio-device' },
+  { id: 3, name: 'Wearables', imageUrl: '/images/smart-watch.png', link: '/products/wearables' },
+  { id: 4, name: 'Aksesoris Komputer', imageUrl: '/images/com_acc.png', link: '/products/aksesoris-komputer' },
 ];
 
 
 
 const DUMMY_BRANDS = [
-    { id: 1, name: 'Brand A', logoUrl: '/images/brands/brand-a.svg', link: '/brands/brand-a'},
-    { id: 2, name: 'Brand B', logoUrl: '/images/brands/brand-b.svg', link: '/brands/brand-b'},
-    { id: 3, name: 'Brand C', logoUrl: '/images/brands/brand-c.svg', link: '/brands/brand-c'},
-    { id: 4, name: 'Brand D', logoUrl: '/images/brands/brand-d.svg', link: '/brands/brand-d'},
-    { id: 5, name: 'Brand E', logoUrl: '/images/brands/brand-e.svg', link: '/brands/brand-e'},
+    { id: 1, name: 'JETE', logoUrl: '/images/jete.png', link: '/brands/brand-a'},
+    { id: 2, name: 'DJI', logoUrl: '/images/dji.png', link: '/brands/brand-b'},
+    { id: 3, name: 'GARMIN', logoUrl: '/images/garmin.png', link: '/brand/garmin'},
+    { id: 4, name: 'Insta360', logoUrl: '/images/insta360.svg', link: '/brands/brand-d'},
+    { id: 5, name: 'Coros', logoUrl: '/images/coros.png', link: '/brands/brand-e'},
+    { id: 6, name: 'GoPro', logoUrl: '/images/gopro.png', link: '/brands/brand-e'},
 ];
 
 export const metadata: Metadata = {
@@ -51,12 +52,6 @@ export const metadata: Metadata = {
     description: 'Temukan berbagai gadget terbaru dan original dengan harga terbaik.',
     images: ['http://dorangadget.com/images/twitter-image.jpg'], // Ganti dengan URL gambar Twitter Anda
   },
-  // canonical: 'http://dorangadget.com/', // Jika perlu
-  // alternates: { // Jika ada versi bahasa lain
-  //   languages: {
-  //     'en-US': 'http://dorangadget.com/en',
-  //   },
-  // },
 };
 
 // app/page.tsx (lanjutan)

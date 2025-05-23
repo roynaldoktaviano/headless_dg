@@ -3,9 +3,9 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const wpUrl = 'https://lean-act.localsite.io/wp-json/wp/v2/produk_doran?_embed';
-  const username = 'oranges';
-  const password = 'obsolete';
+  const wpUrl = 'https://towering-name.localsite.io/wp-json/wp/v2/produk_doran?_embed';
+  const username = 'scissors';
+  const password = 'steadfast';
 
   const headers = new Headers();
   headers.set('Authorization', 'Basic ' + Buffer.from(`${username}:${password}`).toString('base64'));

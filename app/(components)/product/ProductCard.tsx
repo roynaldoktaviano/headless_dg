@@ -11,7 +11,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const hasDiscount = product.harga && product.harga > product.harga_diskon;
   console.log(product);
   return (
-    <Link href={`/products/${product.slug}`} className="group block border rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white">
+    <Link href={`/product/${product.slug}`} className="group block border rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white">
       <div className="relative w-full aspect-[4/3] overflow-hidden"> 
         <img
           src={product._embedded?.['wp:featuredmedia']?.[0]?.source_url ? product._embedded['wp:featuredmedia'][0].source_url : 'https://picsum.photos/200'}
